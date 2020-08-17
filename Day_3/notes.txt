@@ -1,0 +1,118 @@
+
+***** Everything in python is object ******
+**** Every object contains set of methods *****
+
+comments
+-----------
+single line comment ( # )
+multiline comment   
+
+'''
+these lines are 
+commented
+
+'''
+
+
+objects in python
+----------------
+
+number
+------
+number can be integer or decimal or octal or hexa.
+
+val = 10
+aval = 4.434
+
+string
+-----
+string can be defined in single or double or triple quotes.
+
+aname = 'python programming'
+bname = "spark programming"
+cname = """machine learning"""
+
+list  ( array in C ) ( MUTABLE )
+-----
+-list contains set of elements
+-Elements can be set of numbers or strings or any combination.
+-list elements are defined in [].
+
+
+alist = [10,20,30,40]
+blist = ["oracle","microsoft","unix"]
+clist = [10,20,"oracle"]
+
+tuple  ( READ ONLY , IMMUTABLE )
+-------
+****** elements inside tuple cannot be modified DIRECTLY********
+-tuple contains set of elements
+-Elements can be set of numbers or strings or any combination.
+-tuple elements are defined in ().
+
+
+atup = (34,3,43,43)
+btup = ("scala","hadoop","oracle")
+ctup = (40,"java",45.3,"oracle")
+
+
+
+
+dictionary ( hash, map)
+-----------------------
+-dictionary contains elements in key:value items
+-dictionary elements are defined in {}.
+**** There are no such concept of indexing in dictionary ****
+In dictionary, keys are always UNIQUE.
+In dictionary , key can be number or string to uniquely identify
+                value can be number or string or list or tuple or dictionary
+
+syntax:     object = { key:value , key:value , key:value }
+example     book  = {"chap1":10 ,"chap2":20 ,"chap3":30 ,"chap1":1000}
+            data  = {1:2,3:4,5:6}
+            output = {"chap1":[10,"UK","Rose"]  , "chap2":[40,"US","Rita"] , "chap3":[50,"AUS","Gita"] }
+
+
+
+set
+----
+set is Unordered collection of UNIQUE elements of same type.
+        --------               -------             ---------
+
+- set elements are defined in {}.
+
+
+
+
+
+
+classification of objects
+----------------------------
+
+
+mutable
+---------
+list
+dictionary
+set
+
+immutable
+-----------
+number   
+string
+tuple
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
