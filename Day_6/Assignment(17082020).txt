@@ -1,0 +1,21 @@
+Please download the csv files from the below link
+csv files link : https://www.techworldguru.com/python-assignment-2/
+
+Write a Python program to read the file realestate.csv and display the file content line by line with proper error handling.
+
+
+Write a Python program to read realestate.csv and display the count of an individual city.
+
+
+Write a Python program to read realestate.csv and display all the lines satisfying the below
+
+– type should be residential
+
+– price shouldbe greater than 1000000
+
+– city should be either SACRAMENTO or RIO LINDA
+
+
+
+
+Write a Python program to read sales.csv and display all the different(distinct) payment modes

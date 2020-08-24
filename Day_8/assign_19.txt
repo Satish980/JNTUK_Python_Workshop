@@ -1,0 +1,10 @@
+using MongoDB.... Write a program to read realestate.json and insert all the records( all columns) to the database
+-------------
+
+using MongoDB... Write a program to read all the reocords from MongoDB collection ( which was inserted in above question) and write the output to csv file
+
+-------------
+
+using MongoDB... Write a program to read all the records from MongoDB collection ( which was inserted in above question)  and display all the records where the city == 'SACRAMENTO'
+-------------
+

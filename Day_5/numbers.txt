@@ -1,0 +1,10 @@
+1|unix Operating system  
+2|linux
+3|java 
+4|oracle
+5|spark 
+6|scala 
+7|unix 
+8|mongodb
+9|hadoop 
+10|ML 

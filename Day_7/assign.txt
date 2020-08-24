@@ -1,0 +1,21 @@
+Write a program to read realestate.csv and insert all the records( all columns) to the database
+( first create table structure with all the columns in the realestate.csv file )
+
+
+
+Write a Python program to display all the files and folders separately and its count also.
+
+
+
+Write a Python program to display the below information.
+
+display the current user name
+display current working directory
+display Operating system name
+display process id of your running program
+display the current timestamp
+display yesterday’s date
+display tomorrow’s date
+display all the environment variables that are existing
+display the python executable path ( just like ‘which python3’ in Linux )
+

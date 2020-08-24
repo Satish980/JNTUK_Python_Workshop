@@ -1,0 +1,693 @@
+
+***** Everything in python is object ******
+**** Every object contains set of methods *****
+
+comments
+-----------
+single line comment ( # )
+multiline comment   
+
+'''
+these lines are 
+commented
+
+'''
+
+
+objects in python
+----------------
+
+number
+------
+number can be integer or decimal or octal or hexa.
+
+val = 10
+aval = 4.434
+
+
+string
+-----
+string can be defined in single or double or triple quotes.
+
+aname = 'python programming'
+bname = "spark programming"
+cname = """machine learning"""
+
+list  ( array in C ) ( MUTABLE )
+-----
+-list contains set of elements.
+-Elements can be set of numbers or strings or any combination.
+-list elements are defined in [].
+
+
+alist = [10,20,30,40]
+blist = ["oracle","microsoft","unix"]
+clist = [10,20,"oracle"]
+
+tuple  ( READ ONLY , IMMUTABLE )
+-------
+****** elements inside tuple cannot be modified DIRECTLY********
+-tuple contains set of elements
+-Elements can be set of numbers or strings or any combination.
+-tuple elements are defined in ().
+
+
+atup = (34,3,43,43)
+btup = ("scala","hadoop","oracle")
+ctup = (40,"java",45.3,"oracle")
+
+
+
+
+dictionary ( hash, map)
+-----------------------
+-dictionary contains elements in key:value items
+-dictionary elements are defined in {}.
+**** There are no such concept of indexing in dictionary ****
+In dictionary, keys are always UNIQUE.
+In dictionary , key can be number or string to uniquely identify
+                value can be number or string or list or tuple or dictionary
+
+syntax:     object = { key:value , key:value , key:value }
+example     book  = {"chap1":10 ,"chap2":20 ,"chap3":30 ,"chap1":1000}
+            data  = {1:2,3:4,5:6}
+            output = {"chap1":[10,"UK","Rose"]  , "chap2":[40,"US","Rita"] , "chap3":[50,"AUS","Gita"] }
+
+
+
+set
+----
+set is Unordered collection of UNIQUE elements of same type.
+        --------               -------             ---------
+
+- set elements are defined in {}.
+
+
+
+
+
+
+classification of objects
+----------------------------
+
+
+mutable
+---------
+list
+dictionary
+set
+
+immutable
+-----------
+number   
+string
+tuple
+
+
+methods & functions
+--------------------
+
+
+methods: methods are object specific.
+         string methods are differen to list methods
+
+functions: functions are common for all the objects
+
+
+
+builtin functions
+--------------------
+print()
+input()
+max()
+min()
+sum()
+isinstaance()
+type()
+help()
+dir()
+map()
+filter()
+id()
+
+
+conversion functions  ( typecasting )
+---------------------
+int()
+float()
+str()
+oct()
+list()
+tuple()
+dict()
+set()
+
+How to display all the builtin functions ?
+------------------------------------------------
+In console
+
+dir(__builtins__)
+
+
+statements
+-----------
+
+
+conditional statements
+--------------------
+if
+if-else
+if-elif-elif...else
+
+
+
+control statements
+-------------------
+while
+for
+
+
+jump statements
+-----------
+break
+continue
+
+
+
+level1
+level1
+level1
+if cond:
+     level2
+     level2
+     level2
+     level2
+level1
+level1
+
+level1
+level1
+level1
+if cond:
+     level2
+     if cond:
+	level3
+	level3
+     else:
+	level3
+	level3
+level1
+level1
+
+
+operators
+---------
+
+arithmetic operators : + - *  / %
+
+relational operators : <  >  <=  >=  ==  !=
+
+assignment operator (++ and -- are NOT allowed in python )   
+-----------------------------
+val = 1
+val+=1  or  val = val +1
+val-=1  or  val = val -1
+
+logical operators
+-----------------
+and   
+or
+not
+
+name = "UNIX"
+if  len(name) == 4  and name.isupper():
+	# only if both the conditions are True
+
+
+special operators
+-------------------
+in
+as
+
+
+
+user defined functions
+---------------------
+
+
+
+fixed arguments
+
+default arguments
+
+variable length arguments
+
+
+*  and **	
+
+
+
+
+local & global
+-------------------
+If any object is defined outside the function ... it is global object
+If any object is defined inside the function .... it is local object
+
+
+
+
+
+
+
+file handling
+---------------
+
+working with flat files ( log conf csv txt .... )
+----------------------
+
+opening the file
+---------------
+syntax:    object = open(filename,mode)
+example:     fobj = open("customers.txt","r")
+             case1 : if the file is existing .. we can read the file
+             case2 : if the file is not existing.. it will throw error 'FileNotFoundError'
+         
+             fobj = open("customers.txt","w")
+             case1 : If the file is existing ... it overwrites the content
+             case2 : If hte file is not existing.. it creates a file     
+
+
+             fobj = open("customers.txt","a")
+             case1 : If the file is existing ... it appends the data to the file
+             case2 : If hte file is not existing.. it creates a file     
+            
+
+closing the file
+------------------
+fobj.close()
+
+
+read operation
+---------------
+- reading the file line by line
+- fobj.readlines()    ( output will be in the list format) 
+- fobj.read()         ( output is the string )
+- csv library
+- pandas library
+
+
+
+
+
+
+
+
+
+working with third part files ( xlsx xls ppt pptx pdf .... )
+-----------------------------
+
+step1: open pypi.org
+step2: download the required library
+step3: extract and navigate to the library path
+step4: python setup.py install
+
+
+pip tool   ( pip install libraryname)
+easy_install
+
+
+
+
+exception handling
+---------------------
+Basically we have 2 types of errors :
+
+-synntax error
+-semantic error or runtime error
+
+Handling errors|exceptions in the runtime is known as exception handling
+
+
+try  ( mandatory)
+except( mandatory)
+else   ( optional)
+finally( optional)
+raise
+
+
+library|module|package
+-------
+Every library contains some set of methods
+
+- buildin libraries( which are generally used by everyone)  : Installed along with python
+
+
+- third party libraries: Depending on the requirement( database , cloud , machine learning , gui testing) developer has to install the third party library from www.pypi.org  or manually  or pip or easy_install
+
+
+importing library
+-----------------
+
+import math
+print(math.log(2))
+
+
+
+
+third party libraries
+--------------------
+
+
+requirement : Mysql database from python for performing select,insert,deletion operations
+
+
+What is the library for connecting with MYSQL ?
+
+
+python mysql library ?
+
+mysql-connector-python ( outdated)
+mysql. connector( outdated)
+import mysql.connect
+PyMySql ------------------------->  generally used
+import mysqldb  ( outdated)
+
+MySQL
+-----
+pymysql
+
+MongoDB  
+------------
+pymongo
+
+Oracle
+-------
+cx_Oracle
+
+SQL server
+-----------
+pymssql
+
+installing third party libraries
+---------------------------------
+-installing manually
+-pip  ( pip install pymysql)
+-easy_install  ( easy_install pymysql)
+
+
+How to uninstall using pip
+--------------------------
+pip uninstall libraryname
+
+
+listing all the libraies
+-------------------------
+pip list
+
+
+requirement :  write string to the excel ( xlsx  xls )
+
+
+
+python xlsx library
+
+
+openpyxl : read/write
+xlsxwriter: write
+xlsx      : read
+pyxls     : older versions of excel
+
+
+
+step1: connect to db
+step2: prepare your query
+step3: execute your query
+step4: fetchall
+step5: disconnect
+
+
+
+relational database  : mysql Oracle sqlserver ....
+
+
+non-relational database : mongodb cassandra    ( key:value )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8000+  builtin libraries
+250000+ third party library
+
+os            :
+sys           : system config information
+urllib.request: working with http
+math          : mathematical operations
+random        : random numbers
+calendar
+smtplib       : sending mails
+ftplib        : ftp'ng the file
+telnetlib     :
+logging       : logging all the events
+shutil        : copy,move,rmtree ....
+filecmp       : comparing directories
+zipfile       : create/extract the zip files
+rarfile       : create/extract the tar files
+tarfile       : create/extract the tarfiles
+getpass       : shadowing the password
+json          : reading/writing json files
+csv           : reading/writing csv files
+xml        
+sysconfig     : system configuration
+collections   : working with dictionaries
+argparse      : passing args from command line
+optparse      : passing args from command line
+time          : working with date and time
+datetime      : working with date and time
+cryptography  : encrypting and decrypting the passwords
+heapq         : performing array operations
+gzip          : reading gunzip files
+re            : validating the strings
+ipadresss     : validting ip address
+platform      : display platform information
+pathlib       : creating temp files
+threading     : for performing multi threading
+multiprocessing:
+subprocess    : invoking the system commands ( linux or dos commands)
+
+
+
+frequently used third party libraries
+---------------------------------------
+database related
+----------------
+pymysql   :
+cx_Oracle
+pymongo
+pymssql
+pyautogui
+
+web frameworks ( developing web applications)
+--------------
+django
+flask
+bottom
+
+analytics/machine learning
+---------------------------
+numpy
+scipy
+pandas ( processing|data cleaning)
+seaborn
+plotly
+ggplot
+matplotlib   : visualizing data .. bar graph.. pie graph
+scikit-learn :  machine learning algorithms
+
+image processing
+---------------
+pillow
+opencv
+
+APIs ( REST API)
+-----
+requests
+
+
+
+excel programming
+------------------
+openpyxl    : reading/write excel files
+xlsxwriter  : writing to excel file
+python-docx : working with ms-word
+
+networking
+-----------
+paramiko   :  interacting with remote servers
+netmiko    :  connecting to router/switch
+pyping     :  ping any host or ip address
+
+
+
+
+
+
+
+
+10 files  10 mins  (each file tasks 1 min)
+
+each file as one single thread    ( 10 files in 1 min)
+
+
+
+1 server ----     10 servers
+
+
+
+
+
+
+
+
+
+
+
+
+display all existing databases
+-----------------------------
+show databases ;
+
+creating your database
+-----------------------
+create database jntuk;
+
+accessing your database
+------------------------
+use jntuk;
+
+display all the existing tables
+-------------------------------
+show tables ;
+
+creating table
+----------------
+create table realestate ( street varchar(200) , city varchar(200) ) ;
+
+display all the records
+----------------------
+select * from realestate ;  ( Initially empty )
+
+insert into realestate values('101 MG Road','Hyderabad') ;
+insert into realestate values('Ram pet','Machilipatnam') ;
+
+
+
+
+
+step1: connected to database
+step2: prepared the query
+step3: execute
+step4: fetch the data
+step5: diconnect|close
+
+
+
+
+
+
+
+
+
+web scrapping | web crawling
+------------------------------
+
+beautifulsoup ( concept)
+
+http errors
+-------------
+200 : success
+402 : client side issue
+503 : server side issue
+
+
+web scraping
+-------------
+step1: get the html input using requests library
+step2: use bs4( beautifulsoup library) to read html page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

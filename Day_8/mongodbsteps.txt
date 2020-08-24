@@ -1,0 +1,64 @@
+mongo db 
+----------
+
+If you want to check your databases list, use the command show dbs.
+-------------------------------------------------------
+show dbs
+
+create database
+---------------
+syntax :  use DATABASE_NAME
+example:  use jntuk
+
+
+check where you are( your existing database)
+-----------------------------------------
+db
+
+If you want to check your databases list, use the command show dbs.
+-------------------------------------------------------
+show dbs
+
+Note: Your created database (mydb) is not present in list. To display database, you need to insert at least one document into it.
+
+
+display all existing tables
+---------------------------
+db. getCollectionNames()
+
+inserting document
+------------------
+db.movie.insert({"name":"python programming"})
+
+display all records from collection(table)
+-------------------
+db.movie.find()
+
+
+droping database
+------------------
+db.dropDatabase()
+
+
+
+
+Example
+---------
+show dbs
+
+use jntuk
+
+
+display all existing tables
+---------------------------
+db. getCollectionNames()
+
+
+inserting record
+----------------
+db.housing.insert({"street": "3526 HIGH ST","city": "SACRAMENTO","zip": 95838,"state": "CA","beds": 2,"baths": 1,"sq__ft": 836,"type": "Residential","sale_date": "Wed May 21 00:00:00 EDT 2008","price": 59222,"latitude": 38.631913,"longitude": -121.434879 })
+
+
+display all the records
+--------------------------
+db.housing.find()
